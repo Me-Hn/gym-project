@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+}
+
+.navbar {
+  background: rgb(71, 193, 50);
+  background: linear-gradient(90deg, rgba(71, 193, 50, 1) 28%, rgba(22, 93, 9, 1) 85%);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* Ensure the navbar stays above other content */
+}
+
+
+.navbar-brand {
+  /* border: 1px solid black; */
+  height: 65px;
+  width: 180px;
+
+}
+
+.logo {
+  height: 200px;
+  position: relative;
+  top: -70px;
+  overflow: hidden;
+}
+
+ul li a {
+  position: relative;
+  left: 80px;
+  text-align: center;
+}
+
+.dropdown-menu .dropdown-item {
+  position: relative;
+  left: -1px;
+
+}
+
+@media (max-width: 767px) {
+  .navbar-nav li a {
+    color: black;
+    position: relative;
+    /* left: -100px; */
+  }
+}
+
+.nav-link.hvr-underline-from-left::before {
+  background: rgb(36, 119, 21);
+  /* Replace with your desired hover background color */
+}
+
+/* navbar End */
+
+/* carousel stat */
+
+.carousel-inner {
+  height: 450px;
+
+}
+
+.carousel-caption {
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: silver;
+  /* Text color */
+  padding: 10px;
+  z-index: 10;
+  /* Ensure caption is on top of images */
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .carousel-inner {
+    height: 250px;
+  }
+}
+
+.ic {
+  background-color: silver;
+  height: 55px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+  border: solid 3px black;
+
+}
+
+#ic1 {
+  text-align: center;
+  position: relative;
+  top: 10px;
+  left: -2px;
+}
+/* carosel End */
+
+/* mid cintent */
+
+.service {
+  width: 100%;
+  background-color: black;
+  color: #ffffff;
+  text-transform: capitalize;
+  text-align: center;
+  display: inline-block;
+}
+
+#hd-1 {
+  padding-top: 50px;
+}
+
+.mid-sd-row {
+  display: flex;
+  justify-content: center;
+  /* Center items horizontally */
+  align-items: center;
+  /* Center items vertically */
+}
+
+@media (max-width: 767px) {
+  .mid-sd-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Adjust grid layout for smaller screens */
+  }
+
+  .ser-1,
+  .ser-2,
+  .ser-3,
+  .ser-4 {
+    width: 190px !important;
+    /* Apply !important to override any conflicting styles */
+    position: relative;
+    left: 2px;
+  }
+
+  .person1 {
+    width: 150px !important;
+  }
+}
+
+
+.ser-1,
+.ser-2,
+.ser-3,
+.ser-4 {
+  margin: auto;
+  /* background-color: rgb(37, 36, 36); */
+  background-color: black;
+  width: 220px;
+  /* Adjust width as needed */
+  height: 235px;
+  /* border: solid 1px #ffffff; */
+  margin-right: 10px;
+  /* Optional: adds some spacing between the divs */
+  text-align: center;
+  /* Center text horizontally within each div */
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px rgb(75, 72, 72);
+  margin-top: 25px;
+  margin-bottom: 50px;
+  padding-top: 15px;
+}
+
+.person1 {
+  height: 150px;
+  width: 180px;
+  background-color: antiquewhite;
+  margin: auto;
+  border-radius: 3px;
+  /* background-image: url(tr1.jpg); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+  /* Add smooth transition to transform */
+  cursor: pointer;
+
+}
+
+.person1 img{
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.person1:hover {
+  transform: scale(1.1);
+  /* Grow the div on hover */
+}
+
+.personName {
+  text-transform: capitalize;
+  position: relative;
+  top: 10px;
+}
+/* mid-sd-row :end */
+.phead{
+  border: solid 1px white;
+  margin-bottom: 25px;
+}
+
+/* second row :start */
+.mid-sd-row2{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* Center items horizontally */
+  align-items: center;
+  /* Center items vertically */
+  padding: 0;
+  margin: 0;
+
+}
+
+.ser-row2{
+  background-color: black;
+  width: auto;
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  height: 200px;
+  border: solid 1px rgb(92, 89, 89);
+  border-top: black;
+  border-bottom: black;
+  margin-bottom: 50px;
+}
+
+.row2-icon{
+  font-size: 3em;
+  position: relative;
+  top: 20px;
+}
+
+#hd-row2{
+  position: relative;
+  top: 40px;
+  text-transform: capitalize;
+  /* left: -10px; */
+}
+
+#hd2-row2{
+  position: relative;
+  top:42px;
+  font-size: 1.8em;
+  color: rgb(117, 228, 98);
+  text-shadow: 10px 10px 10px rgb(75, 72, 72);
+}
+/* second row :End */
+
+.demo{
+  height: 500px;
+  width: 100%;
+  background-color: aqua;
+  background-image: url(demo.jpg);
+}
+
+/* footer start */
+.footer {
+  position: relative;
+  padding: 20px 0;
+  text-align: center;
+  background: rgb(71, 193, 50);
+  background: linear-gradient(90deg, rgba(71, 193, 50, 1) 28%, rgba(22, 93, 9, 1) 85%);
+  color: black;
+  width: 100%;
+
+
+
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+.footer .section-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer .quick-links a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer .contact-info i {
+  font-size: 1.2em;
+}
+
+.footer .contact-info a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer .social-icons a {
+  font-size: 1.5em;
+  margin: 0 10px;
+}
+
+#ft-logo {
+  /* border: solid 1px black; */
+  height: 50px;
+  width: 150px;
+  position: relative;
+  left: 50px;
+
+}
+
+@media (max-width: 767px) {
+  #ft-logo {
+    position: relative;
+    left: 25%;
+  }
+}
+
+.quick-links a {
+  /* border: solid 1px black; */
+  width: 60px;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  color: black;
+
+}
+
+.quick-links a.hvr-underline-from-left::before {
+  /* background: rgb(36, 119, 21); */
+  background-color: black;
+  /* Replace with your desired hover background color */
+}
+
+/* footer End */
+
+/* univers */
+.btn-conteiner {
+  height: 40px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  --color-text: #ffffff;
+  --color-background: black;
+  --color-outline: #ff145b80;
+  --color-shadow: #00000080;
+  position: relative;
+  left: -35%;
+  margin-top: -25px;
+
+
+
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  padding: 5px 30px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: 1s;
+  border-radius: 100px;
+  box-shadow: 0 0 0.2em 0 var(--color-background);
+}
+
+.btn-content:hover,
+.btn-content:focus {
+  transition: 0.5s;
+  -webkit-animation: btn-content 1s;
+  animation: btn-content 1s;
+  outline: 0.1em solid transparent;
+  outline-offset: 0.2em;
+  box-shadow: 0 0 0.4em 0 var(--color-background);
+}
+
+.btn-content .icon-arrow {
+  transition: 0.5s;
+  margin-right: 0px;
+  transform: scale(0.6);
+}
+
+.btn-content:hover .icon-arrow {
+  transition: 0.5s;
+  margin-right: 25px;
+}
+
+.icon-arrow {
+  width: 20px;
+  margin-left: 15px;
+  position: relative;
+  top: 6%;
+}
+
+/* SVG */
+#arrow-icon-one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+#arrow-icon-two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.btn-content:hover #arrow-icon-three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.btn-content:hover #arrow-icon-one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.btn-content:hover #arrow-icon-two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: var(--color-background);
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+/* Button animations */
+@-webkit-keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+
+@keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+
+/* univers End*/
