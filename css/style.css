@@ -7,6 +7,7 @@
 
 body {
   background-color: black;
+
 }
 
 .navbar {
@@ -52,7 +53,7 @@ ul li a {
     position: relative;
     /* left: -100px; */
   }
-  .btn-login{
+  .btn-login {
     display: flex;
   }
 }
@@ -95,7 +96,7 @@ ul li a {
   right: 0;
   bottom: 0;
   margin: auto;
-  content: '';
+  content: "";
   border-radius: 50%;
   display: block;
   width: 20em;
@@ -104,7 +105,6 @@ ul li a {
   text-align: center;
   transition: box-shadow 0.5s ease-out;
   z-index: -1;
-
 }
 
 .btn-login:hover {
@@ -114,9 +114,12 @@ ul li a {
 
 .btn-login:hover::before {
   box-shadow: inset 0 0 0 10em black;
-
 }
- 
+.moon {
+  width: 200px;
+  display: flex;
+}
+
 /* navbar End */
 
 /* carousel stat */
@@ -133,15 +136,14 @@ ul li a {
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: silver;
-  /* Text color */
   padding: 10px;
   z-index: 10;
-  /* Ensure caption is on top of images */
-
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-style: normal;
+  text-align: center; /* Add this line for better alignment */
 }
+
 
 .carousel-item img {
   width: 100%;
@@ -192,6 +194,8 @@ ul li a {
   /* Center items horizontally */
   align-items: center;
   /* Center items vertically */
+ 
+
 }
 
 @media (max-width: 767px) {
@@ -208,7 +212,7 @@ ul li a {
     width: 190px !important;
     /* Apply !important to override any conflicting styles */
     position: relative;
-    left: 2px;
+    left: -5px;
   }
 
   .person1 {
@@ -220,19 +224,14 @@ ul li a {
 .ser-2,
 .ser-3,
 .ser-4 {
-  margin: auto;
-  /* background-color: rgb(37, 36, 36); */
+  /* margin: auto; */
   background-color: black;
-  width: 220px;
-  /* Adjust width as needed */
+  width: 200px;
   height: 235px;
-  /* border: solid 1px #ffffff; */
-  margin-right: 10px;
-  /* Optional: adds some spacing between the divs */
+
   text-align: center;
-  /* Center text horizontally within each div */
   border-radius: 4px;
-  box-shadow: 5px 5px 10px rgb(75, 72, 72);
+  box-shadow: 3px 3px 10px rgb(75, 72, 72);
   margin-top: 25px;
   margin-bottom: 50px;
   padding-top: 15px;
@@ -244,7 +243,6 @@ ul li a {
   background-color: antiquewhite;
   margin: auto;
   border-radius: 3px;
-  /* background-image: url(tr1.jpg); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -374,6 +372,7 @@ ul li a {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
+ 
 }
 
 @media (max-width: 767px) {
@@ -385,6 +384,7 @@ ul li a {
     z-index: 2;
     text-align: right;
     width: 410px;
+   
   }
 
   .bol {
@@ -454,6 +454,7 @@ ul li a {
   );
   color: black;
   width: 100%;
+  overflow: hidden;
 }
 
 .footer a {
@@ -519,11 +520,11 @@ ul li a {
 
 /* univers */
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .btn-conteiner {
-position: relative;
-left: 50px;
-top: 15px;
+    position: relative;
+    left: 50px;
+    top: 15px;
   }
 }
 
