@@ -127,8 +127,7 @@ body {
   height: 450px;
 }
 
-
-.carousel-caption {
+#carousel-cp {
   height: auto;
   position: absolute;
   top: 50%;
@@ -141,7 +140,6 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-style: normal;
-  text-align: center; /* Add this line for better alignment */
 }
 
 .carousel-item img {
@@ -436,6 +434,50 @@ body {
 }
 /* ::after footer  */
 
+/* content start start */
+.content {
+  background-color: black;
+  overflow: hidden;
+  height: auto;
+}
+
+.sub-ct1,
+.sub-ct2 {
+  /* border: solid 1px silver; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.cont,
+.cont1 {
+  width: 90%;
+  position: relative;
+  left: 25px;
+  height: 350px;
+  border-radius: 4px;
+  color: #ffffff;
+  margin-top: 65px;
+}
+
+.cont-hd {
+  text-transform: capitalize;
+}
+.cont1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 5px 10px gray;
+}
+
+.cont1 img {
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+
+/* content start end */
+
 /* footer start */
 .footer {
   position: relative;
@@ -450,6 +492,9 @@ body {
   color: black;
   width: 100%;
   overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .footer a {
